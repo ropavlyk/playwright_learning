@@ -19,6 +19,7 @@ Turn this into a small automation framework with better structure, reporting and
 - working with common flows like login, registration, search
 - moving from simple scripts to proper test functions using Pytest
 - adding assertions for validations
+- pytest markers for test grouping (smoke, regression)
 - version control with Git
 - creating a GitHub repository and pushing the project
 - introducing Page Object Model (POM) for better structure
@@ -26,4 +27,5 @@ Turn this into a small automation framework with better structure, reporting and
 - adding basic HTML test reporting
 - adding screenshots on test failures for debugging
 - integrating CI/CD with GitHub Actions
+- running specific test suites via GitHub Actions
 
