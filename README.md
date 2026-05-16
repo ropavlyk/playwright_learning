@@ -1,14 +1,14 @@
-# Playwright Learning Project
+# Playwright learning project
 
 My personal project for learning test automation with Playwright, Python and Pytest. Goal is to build a small automation framework with proper structure, reporting and CI/CD.
 
-## Tech Stack
+## Tech stack
 - Python
 - Playwright
 - Pytest
 - Git / GitHub
 
-## Learning Path
+## Learning path
 - 🟢 interacting with UI elements (text fields, buttons, links, checkboxes, dropdowns, etc)
 - 🟢 moving from simple scripts to proper test functions using Pytest
 - 🟢 adding assertions for validations
