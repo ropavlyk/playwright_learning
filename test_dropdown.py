@@ -1,5 +1,9 @@
+import pytest
 from playwright.sync_api import sync_playwright, expect
 
+
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_standard_dropdown():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -14,6 +18,7 @@ def test_standard_dropdown():
             browser.close()
 
 
+@pytest.mark.regression
 def test_custom_dropdown():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -30,6 +35,7 @@ def test_custom_dropdown():
             browser.close()
 
 
+@pytest.mark.regression
 def test_custom_multiselect_dropdown():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)

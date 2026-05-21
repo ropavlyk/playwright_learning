@@ -1,5 +1,9 @@
+import pytest
 from playwright.sync_api import sync_playwright, expect
 
+
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_yes_radio_button(): 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -13,7 +17,7 @@ def test_yes_radio_button():
         browser.close()
 
 
-
+@pytest.mark.regression
 def test_impressive_radio_button():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -28,7 +32,7 @@ def test_impressive_radio_button():
         browser.close()
 
 
-
+@pytest.mark.regression
 def test_disabled_radio_button():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)

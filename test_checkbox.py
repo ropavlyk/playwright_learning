@@ -1,5 +1,8 @@
+import pytest
 from playwright.sync_api import sync_playwright, expect
 
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_checkbox_checks():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -14,6 +17,7 @@ def test_checkbox_checks():
             browser.close()
 
 
+@pytest.mark.regression
 def test_checkbox_unchecks():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -28,6 +32,7 @@ def test_checkbox_unchecks():
             browser.close()
 
 
+@pytest.mark.regression
 def test_tree_expands():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -40,6 +45,7 @@ def test_tree_expands():
             browser.close()
 
 
+@pytest.mark.regression
 def test_tree_collapses():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -54,6 +60,7 @@ def test_tree_collapses():
             browser.close()
 
 
+@pytest.mark.regression
 def test_sub_checkbox_checks():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)

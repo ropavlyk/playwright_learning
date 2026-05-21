@@ -1,5 +1,8 @@
+import pytest
 from playwright.sync_api import sync_playwright, expect
 
+
+@pytest.mark.regression
 def test_new_tab_opened():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -17,6 +20,8 @@ def test_new_tab_opened():
             browser.close()
 
 
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_api_created():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -41,7 +46,7 @@ def test_api_created():
             browser.close()
 
 
-
+@pytest.mark.regression
 def test_api_forbidden():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -58,7 +63,7 @@ def test_api_forbidden():
             browser.close()
 
 
-
+@pytest.mark.regression
 def test_api_not_found():
     with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
