@@ -16,7 +16,6 @@ def test_text_field():
         page.locator("#currentAddress").fill("Vancouver")
         page.locator("#permanentAddress").fill("Calgary")
         
-
         page.get_by_role("button", name="Submit").click() 
         #page.locator("#submit").click()
 
@@ -27,4 +26,3 @@ def test_text_field():
         
         browser.close()
 
-        #run pytest in terminal: pytest Learning/test_text_field.py -v

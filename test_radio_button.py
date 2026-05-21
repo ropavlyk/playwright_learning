@@ -43,4 +43,3 @@ def test_disabled_radio_button():
 
         browser.close()
 
-        #run in terminal: pytest Learning/test_radio_button.py -v
